@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.warp {
+    width: 1179px;
+    height: 716px;
+    position: relative;
+    margin: auto;
+}
+
+.warp .list {
+    position: relative;
+    list-style: none;
+    width: 1179px;
+    height: 716px;
+}
+
+.warp span{
+    height: 45px;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.warp span p{
+color: #fff;
+font-size: 24px;
+line-height: 45px;
+padding-left: 25px;
+letter-spacing: 3px;
+}
+
+.warp .list img {
+    position: absolute;
+    transition: all .8s;
+}
+.item{
+    opacity: 0;
+}
+.item.active {
+    z-index: 10;
+    opacity: 1;
+}
+
+.btn {
+    position: absolute;
+    z-index: 1;
+    top: 187.5px;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+#goPre{
+    left: 5px;
+}
+
+#goNext{
+    right: 5px;
+}
+.pointlist {
+    list-style: none;
+    position: absolute;
+    left: 45%;
+    bottom: 35px;
+    z-index: 1000;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    float: left;
+    margin-right: 14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.point.active {
+    background-color: rgba(255, 255, 255, 0.6);
+}

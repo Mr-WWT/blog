@@ -1,0 +1,36 @@
+*{margin: 0px;padding: 0px;}
+body{color:#666;overflow-x:hidden;}
+img{border:none;}
+a{color:#000;font-size:14px;text-decoration:none;}
+ul,ol,dl{list-style:none;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
+.header,.banner,.nav,.main,.f-nav,.footer{width: 1263px;margin:0 auto;overflow:hidden;}
+
+.main-1{display: grid;grid-template-rows: 92px 454px 10px 43px 878px 290px 74px;}
+.img1{margin: 20px 0 0 24px;float: left;}
+.header ul{float: left;margin-left: 100px;}
+.header ul li{float: left;padding: 0 24px;}
+.header ul li a{line-height: 92px;color: #333;}
+.header ul li a:hover{color:#3167b1; text-decoration:underline;}
+.a1 {padding-left: 26px;border-left: 1px solid #ebebeb;padding-top: 42px;float: left;height: 92px;}
+.a1 span{background: url(../img/sjx.jpg) no-repeat center right;padding-right: 10px;margin-left: 12px;}
+.nav{background: url(../img/navbar.jpg) no-repeat;line-height: 43px;}
+.a2{padding-left: 40px;color: #666;}
+.a3{color: #666;font-size: 14px;margin: 0 10px;}
+.more{float: right;background: url(../img/more.jpg) no-repeat;width: 42px;height: 39px;}
+.main span{font-size: 18px;color: #666;height: 122px;line-height: 122px;padding: 0 370px;}
+.main dl dd{font-size: 14px;color: #999;line-height: 20px;padding: 0 15px;}
+.main dl dd h2{font-size: 18px;color: #333;line-height: 58px;}
+.dl1,.dl4{padding-bottom: 26px;margin:0 30px;margin-bottom: 40px;width: 380px;float: left;background: #f5f5f5;}
+.dl2,.dl3,.dl5{padding-bottom: 26px;margin-right: 30px;margin-bottom: 40px;width: 380px;float: left;background: #f5f5f5;}
+.f-nav{height: 290px;background: #f6f6f6;}
+.dl6{padding: 0 58px;border-right: 1px dashed #a2a2a2;float: left;margin-top: 63px;margin: 55px 0 0 22px;}
+.f-nav dl{padding: 0 58px;border-right: 1px dashed #a2a2a2;float: left;margin-top: 63px;}
+.f-nav dl dt{color: #2097d4;font-size: 16px;margin-bottom: 30px;}
+.f-nav dl dd a{font-size: 12px;color: #666;line-height: 24px;}
+.dl7{float: left;margin-left: 100px;margin-top: 78px;}
+.dl7 dd{float: left;}
+.dl7 dt{margin-bottom: 10px;}
+.dl7 dd a{margin:0 6px;}
+.footer{color: #999;font-size: 12px;line-height: 74px;background: #292a2c;text-align: center;}
+.footer a{color: #fff;margin: 0 5px;font-size: 12px;}

@@ -1,0 +1,163 @@
+.nav .nav1 {
+    width: 100%;
+    height: 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.nav .nav1 ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    margin-left: 2em;
+    z-index: 10000;
+
+}
+
+.nav .nav1 ul li {
+    float: none;
+    line-height: 35px;
+    background-color: #fff;
+}
+
+.nav .nav1 ul li a {
+    color: #0078ff;
+
+}
+
+.nav .nav1 ul li:hover a {
+    color: #fff;
+}
+
+
+#toggle {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    display: block;
+    cursor: pointer;
+}
+
+#ckeckbox {
+    display: none;
+}
+
+#ckeckbox svg {
+    display: block;
+    float: right;
+}
+
+#ckeckbox2 {
+    display: none;
+}
+
+#ckeckbox2 svg {
+    display: block;
+    float: right;
+}
+
+.nav .nav1 input:checked~ul {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .nav .nav1 {
+        max-width: 540px;
+    }
+}
+
+#main,
+#main .main1 {
+    width: 100%;
+    display: block;
+}
+
+.warp,
+.warp .list,
+.warp .list img {
+    max-width: 100%;
+    /* height: 100%; */
+}
+
+.warp .btn,
+.warp span,
+.warp .pointlist {
+    display: none;
+}
+
+#main .main2 {
+    max-width: 540px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+#main .main2 .main3 {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#main .main2 .main3 .main3-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#main .main2 .main3 .main3-1 ul {
+    padding-top: 1rem;
+}
+
+#main .main2 .main3 .main3-1 .main5 {
+    width: 100%;
+}
+
+#main .main2 .main3 .main3-1 .main5 .main7 {
+    padding: 0;
+}
+
+#main .main3 .main2 .main3-3 {
+    margin-top: 0;
+    border: none;
+    height: 300px;
+}
+
+#main .main3 .main2 .main3-3 p {
+    text-align: left;
+}
+
+#main .main3 .main2 .main3-4 {
+    margin-top: 18px;
+    border: none;
+}
+
+#main .main3 .main2 .main3-4 h4 {
+    border: none;
+}
+
+#main .main3 .main3-1 .main5 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main .main2 .main3 .main3-1 .main5 .main7 {
+    padding-right: 2rem;
+}
+
+@media (max-width: 400px) {
+    #main .main2 .main3 .main3-1 .main5 {
+        flex-direction: column;
+    }
+
+    #main .main2 .main3 .main3-1 .main5 .main7 {
+        padding-top: 1rem;
+    }
+}
+
+#main .main2 .main3 .main3-4 .main3-5 .main3-6 a .img1 {
+    max-width: 540px;
+    max-height: 320px;
+}
