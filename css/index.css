@@ -61,7 +61,7 @@ button {
     color: #0078ff;
 }
 
-.nav .nav1 ul a {
+.nav .nav1 ul li {
     float: left;
     color: #0078ff;
     font-weight: bold;
@@ -70,13 +70,16 @@ button {
     padding: 0px 30px;
     line-height: 55px;
 }
+.nav .nav1 ul li a{
+    color: #0078ff;
+}
 
-.nav .nav1 ul a:hover {
+.nav .nav1 ul li:hover {
     background-color: #0078ff;
     transition: all 0.4s;
 }
 
-.nav .nav1 ul a:hover {
+.nav .nav1 ul li:hover a {
     color: #fff;
 }
 
@@ -104,15 +107,6 @@ button {
 #main {
     width: 100%;
     margin: 0 auto;
-}
-
-#main .main1 {
-    width: 100%;
-    display: inline-block;
-}
-
-#main .main1 .main1-1 {
-    height: 535px;
 }
 
 #main .main2 {
