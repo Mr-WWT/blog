@@ -139,7 +139,7 @@
 }
 
 #main .main3 .main3-1 .main5 {
-    display: flex;
+
     justify-content: space-evenly;
 }
 
@@ -148,12 +148,17 @@
 }
 
 @media (max-width: 400px) {
-    #main .main2 .main3 .main3-1 .main5 {
+    #main .main2 .main3 .main3-1 .main3-2 .main5 {
         flex-direction: column;
     }
 
-    #main .main2 .main3 .main3-1 .main5 .main7 {
+    #main .main2 .main3 .main3-1 .main3-2 .main5 .main7 {
         padding-top: 1rem;
+    }
+
+    #main .main2 .main3 .main3-1 .main3-2 .main5 .main6 {
+        display: flex;
+        justify-content: center;
     }
 }
 
