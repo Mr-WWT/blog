@@ -1,6 +1,6 @@
+
 a {
     text-decoration: none;
-
 }
 
 ul,
@@ -35,7 +35,7 @@ button {
     right: 0;
     position: fixed;
     top: -60px;
-    transition: all .3s linear;
+    transition: all .3s ease-in-out;
     z-index: 10001;
 }
 
@@ -61,34 +61,22 @@ button {
     color: #0078ff;
 }
 
-.nav .nav1 a {
+.nav .nav1 ul a {
+    float: left;
     color: #0078ff;
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 3px;
-}
-
-.nav .nav1 ul li:first-child {
-    background-color: #0078ff;
-}
-
-.nav .nav1 ul li:first-child a {
-    color: #fff;
-}
-
-
-.nav .nav1 ul li {
-    float: left;
     padding: 0px 30px;
     line-height: 55px;
 }
 
-.nav .nav1 ul li:hover {
+.nav .nav1 ul a:hover {
     background-color: #0078ff;
     transition: all 0.4s;
 }
 
-.nav .nav1 ul li:hover a {
+.nav .nav1 ul a:hover {
     color: #fff;
 }
 
