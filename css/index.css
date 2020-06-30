@@ -82,7 +82,7 @@ button {
 .nav .nav1 ul li a::before {
     content: "";
     width: 34px;
-    height: 2.5px;
+    height: 3px;
     background-color: #0078ff;
     position: absolute;
     bottom: 14px;
