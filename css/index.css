@@ -1,6 +1,7 @@
 
 a {
     text-decoration: none;
+    transition: all .5s ease-in-out;
 }
 
 ul,
@@ -65,22 +66,36 @@ button {
     float: left;
     color: #0078ff;
     font-weight: bold;
+    padding-right: 2rem;
     font-size: 14px;
     letter-spacing: 3px;
-    padding: 0px 30px;
     line-height: 55px;
+    position: relative;
+    overflow: hidden;
+    
 }
-.nav .nav1 ul li a{
+
+.nav .nav1 ul li a {
     color: #0078ff;
 }
 
-.nav .nav1 ul li:hover {
+.nav .nav1 ul li a::before {
+    content: "";
+    width: 34px;
+    height: 2.5px;
     background-color: #0078ff;
-    transition: all 0.4s;
+    position: absolute;
+    bottom: 14px;
+    transition: all .4s;
+    transform: translateX(-45px);
 }
 
-.nav .nav1 ul li:hover a {
-    color: #fff;
+.nav .nav1 ul li a:hover::before {
+    transform: translateX(0px);
+}
+
+.nav .nav1 ul li a:focus::before {
+    transform: translateX(0px);
 }
 
 #toggle {
@@ -182,7 +197,7 @@ button {
     font-weight: 600;
     color: #1e1e1e;
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
 }
 
 #main .main2 .main3 .main3-1 .main3-3 span {
@@ -219,7 +234,8 @@ button {
     max-width: 499px;
     padding-left: 2rem;
 }
-@media (max-width: 769px){
+
+@media (max-width: 769px) {
     #main .main2 .main3 .main3-1 ul {
         padding: 0;
     }
