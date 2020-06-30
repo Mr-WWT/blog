@@ -85,7 +85,7 @@ button {
     height: 3px;
     background-color: #0078ff;
     position: absolute;
-    bottom: 14px;
+    bottom: 12px;
     transition: all .4s;
     transform: translateX(-45px);
 }
