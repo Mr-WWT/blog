@@ -9,7 +9,7 @@ $(function () {
 
     });
     //返回顶部
-    var top = $(".main3").offset().top;
+    var top = $(".main3-1").offset().top;
     $(window).scroll(function () {
         if ($(this).scrollTop() >= top) {
             $(".a-top").fadeIn();
