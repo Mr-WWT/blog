@@ -1,7 +1,5 @@
-
 a {
     text-decoration: none;
-    transition: all .5s ease-in-out;
     font-size: 1rem;
 }
 
@@ -18,7 +16,6 @@ body {
     font-size: 1rem;
 }
 
-input,
 button {
     border: none;
     outline: none;
@@ -36,15 +33,8 @@ button {
     left: 0;
     right: 0;
     position: fixed;
-    top: -60px;
-    transition: all .3s ease-in-out;
+    top: 0px;
     z-index: 10001;
-}
-
-#fixed.active {
-    top: 0;
-    right: 0;
-    left: 0;
 }
 
 .nav .nav1 {
@@ -72,7 +62,7 @@ button {
     line-height: 55px;
     position: relative;
     overflow: hidden;
-    
+
 }
 
 .nav .nav1 ul li a {
@@ -124,22 +114,17 @@ button {
     margin: 0 auto;
 }
 
-#main .main2 {
+
+#main .main3 .main3-1 {
     max-width: 1100px;
+    margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 0 auto;
-    padding-top: 2rem;
+    padding-top: 3rem;
+
 }
 
-#main .main2 .main3 {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f4f4f4;
-}
-
-#main .main2 .main3 .main3-1 {
+#main .main3 .main3-1 .box {
     display: flex;
     justify-content: space-between;
     padding: 4rem 3rem 4rem 3rem;
@@ -148,7 +133,7 @@ button {
         0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-#main .main2 .main3 .main3-1 .main3-2 {
+#main .main3 .main3-1 .main3-2 {
     display: flex;
     max-width: 450px;
     flex: 2;
@@ -157,91 +142,91 @@ button {
 
 }
 
-#main .main2 .main3 .main3-1 .main3-3 {
+#main .main3 .main3-1 .main3-3 {
     max-width: 100%;
     margin-top: 1rem;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 .skill {
+#main .main3 .main3-1 .main3-3 .skill {
     background-color: #cde1f8;
     margin: .5rem 0 1.2rem 0;
     border-radius: 0;
     height: .7rem;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 .skill .progress-1 {
+#main .main3 .main3-1 .main3-3 .skill .progress-1 {
     width: 80%;
     height: 100%;
     background-color: #0078ff;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 .skill .progress-2 {
+#main .main3 .main3-1 .main3-3 .skill .progress-2 {
     width: 70%;
     height: 100%;
     background-color: #0078ff;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 .skill .progress-3 {
-    width: 1%;
+#main .main3 .main3-1 .main3-3 .skill .progress-3 {
+    width: 70%;
     height: 100%;
     background-color: #0078ff;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 .skill .progress-4 {
+#main .main3 .main3-1 .main3-3 .skill .progress-4 {
     width: 30%;
     height: 100%;
     background-color: #0078ff;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 p {
+#main .main3 .main3-1 .main3-3 p {
     font-weight: 600;
     color: #1e1e1e;
     font-size: 1.1rem;
     margin-bottom: 1.3rem;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 span {
+#main .main3 .main3-1 .main3-3 span {
     font-weight: 400;
     color: #4e4e4e;
 }
 
-#main .main2 .main3 .main3-1 .main3-3 .right {
+#main .main3 .main3-1 .main3-3 .right {
     float: right;
 }
 
-#main .main2 .main3 .main3-1 .main3-2 .main5 {
+#main .main3 .main3-1 .main3-2 .main5 {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
 }
 
 
-#main .main2 .main3 .main3-1 .main5 .main7 p {
+#main .main3 .main3-1 .main5 .main7 p {
     padding-bottom: 1rem;
 }
 
-#main .main2 .main3 .main3-1 .main5 .main7 .span1 {
+#main .main3 .main3-1 .main5 .main7 .span1 {
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-#main .main2 .main3 .main3-1 .main5 .main7 span {
+#main .main3 .main3-1 .main5 .main7 span {
     font-size: 0.9rem;
     line-height: 1.5;
 }
 
-#main .main2 .main3 .main3-1 ul {
+#main .main3 .main3-1 ul {
     max-width: 499px;
     padding-left: 2rem;
 }
 
 @media (max-width: 769px) {
-    #main .main2 .main3 .main3-1 ul {
+    #main .main3 .main3-1 ul {
         padding: 0;
     }
 }
 
-#main .main2 .main3 .main3-1 ul h2 {
+#main .main3 .main3-1 ul h2 {
     font-size: 2rem;
     font-weight: normal;
     padding-bottom: 5px;
@@ -251,36 +236,39 @@ button {
     border-bottom: 3px solid #0078ff;
 }
 
-#main .main2 .main3 .main3-1 ul li {
+#main .main3 .main3-1 ul li {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5;
 }
 
-#main .main2 .main3 .main3-1 .main3-2 img {
+#main .main3 .main3-1 .main3-2 img {
     border-radius: 50%;
     display: block;
     width: 150px;
 }
 
-#main .main2 .main3 .main3-4 {
+#main .main3 .main3-4 {
     max-width: 1100px;
     padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
 }
 
-#main .main2 .main3 .main3-4 h4 {
+#main .main3 .main3-4 h4 {
     text-align: center;
     font-size: 3rem;
     font-weight: 800;
 }
 
-#main .main2 .main3 .main3-4 p {
+#main .main3 .main3-4 p {
     text-align: center;
     padding: 1rem 0;
     font-size: 1rem;
 }
 
-#main .main2 .main3 .main3-4 .p1 {
+#main .main3 .main3-4 .p1 {
     width: 40px;
     height: 5px;
     margin: 0 auto;
@@ -288,61 +276,61 @@ button {
     margin-bottom: 4rem;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 ul {
+#main .main3 .main3-4 .main3-5 ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 img {
+#main .main3 .main3-4 .main3-5 .main3-6 img {
     width: 100%;
     height: 100%;
     transition-duration: .5s;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 img:hover {
+#main .main3 .main3-4 .main3-5 .main3-6 img:hover {
     transform: scale(1.25);
     transition: all 1s;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 {
+#main .main3 .main3-4 .main3-5 .main3-6 {
     padding-bottom: 3rem;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 a .img1 {
+#main .main3 .main3-4 .main3-5 .main3-6 a .img1 {
     overflow: hidden;
     max-width: 350px;
     max-height: 220px;
 }
 
 @media (max-width: 1100px) {
-    #main .main2 .main3 .main3-4 .main3-5 .main3-6 a .img1 {
+    #main .main3 .main3-4 .main3-5 .main3-6 a .img1 {
         max-width: 300px;
         max-height: 220px;
     }
 }
 
 @media (max-width: 950px) {
-    #main .main2 .main3 .main3-4 .main3-5 .main3-6 a .img1 {
+    #main .main3 .main3-4 .main3-5 .main3-6 a .img1 {
         max-width: 260px;
         max-height: 220px;
     }
 }
 
 @media (max-width: 829px) {
-    #main .main2 .main3 .main3-4 .main3-5 .main3-6 a .img1 {
+    #main .main3 .main3-4 .main3-5 .main3-6 a .img1 {
         max-width: 235px;
         max-height: 220px;
     }
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 .tilte {
+#main .main3 .main3-4 .main3-5 .main3-6 .tilte {
     padding: 2rem 1rem 1rem 1rem;
     background-color: #fff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, .2);
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 .tilte h2 {
+#main .main3 .main3-4 .main3-5 .main3-6 .tilte h2 {
     font-size: 1.2rem;
     max-width: 210px;
     margin: 0 auto;
@@ -351,37 +339,133 @@ button {
     text-align: center;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 .tilte p {
+#main .main3 .main3-4 .main3-5 .main3-6 .tilte p {
     color: #0078ff;
     font-size: .8rem;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 .tilte p span {
+#main .main3 .main3-4 .main3-5 .main3-6 .tilte p span {
     color: #4e4e4e;
 }
 
-#main .main2 .main3 .main3-4 .main3-5 img {
+#main .main3 .main3-4 .main3-5 img {
     width: 100%;
     height: 100%;
 }
 
-#main .main2 .main3 .main3-5 {
+#main .main3 .main3-5 {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
 }
 
-#footer {
-    background-color: #0078ff;
+#main .main3 .main4 {
+    max-width: 1100px;
     margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-#footer p {
+#main .main3 .main4 .main4-1 {
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06),
+        0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#main .main3 .main4 .main4-1 p {
     text-align: center;
-    line-height: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    
+}
+#main .main3 .main4 .main4-1 .p1{
+    text-align: center;
+    padding: 1rem 0 ;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
-#footer p a {
+#main .main3 .main4 .main4-1 .main4-2 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+#main .main3 .main4 .main4-1 .b{
+    width: 40px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: #0078ff;
+    margin-bottom: 2rem;
+}
+
+#main .main3 .main4 .main4-1 .main4-2 textarea {
+    display: block;
+    padding: .375rem 0 .375rem .75rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 140px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #4e4e4e;
+    border-radius: .25rem;
+    font-family: inherit;
+}
+
+#main .main3 .main4 .main4-1 .main4-2 .main4-3 {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#main .main3 .main4 .main4-1 .main4-2 .main4-3 input {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #4e4e4e;
+    border-radius: .25rem;
+    margin-bottom: 2rem;
+}
+#main .main3 .main4 .main4-1 .main4-4{
+    display: flex;
+    justify-content: center;
+}
+#main .main3 .main4 .main4-1 .main4-4 p {
+    font-size: 1rem ;
     color: #fff;
-    font-size: 24px;
+    background-color: #0078ff;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.a-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #0078ff;
+    text-align: center;
+    line-height: 50px;
+    z-index: 0;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    display: none;
 }

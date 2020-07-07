@@ -61,6 +61,12 @@
         max-width: 540px;
     }
 }
+@media (max-width: 526px) {
+    #main .main3 .main4 .main4-1 .main4-2 .main4-3{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .warp .btn,
 .warp span,
@@ -68,52 +74,46 @@
     display: none;
 }
 
-#main .main2 {
+
+#main  .main3 .main3-1 {
     max-width: 540px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: 0 auto;
-    padding-top: 3rem;
-}
-
-#main .main2 .main3 {
-    float: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#main .main2 .main3 .main3-1 {
     display: flex;
     flex-direction: column;
 }
-
-#main .main2 .main3 .main3-1 ul {
-    padding-top: 1rem;
+#main  .main3 .main3-1 .box{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
-#main .main2 .main3 .main3-1 .main5 {
+#main  .main3 .main3-1 .main5 {
     width: 100%;
 }
+#main .main3 .main3-1 .main3-2{
+    padding: 4rem 3rem 0 3rem;
+}
+#main .main3 .main3-1 ul {
+    padding: 0 3rem 4rem 3rem;
+}
 
 
-
-#main .main3 .main2 .main3-3 {
+#main .main3  .main3-3 {
     margin-top: 0;
     border: none;
-    height: 300px;
+    height: 280px;
 }
 
-#main .main3 .main2 .main3-3 p {
+#main .main3  .main3-3 p {
     text-align: left;
 }
 
-#main .main3 .main2 .main3-4 {
-    margin-top: 18px;
-    border: none;
+#main .main3  .main3-4 {
+    max-width: 540px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-#main .main3 .main2 .main3-4 h4 {
+#main .main3  .main3-4 h4 {
     border: none;
 }
 
@@ -121,19 +121,28 @@
 
     justify-content: space-evenly;
 }
+#main .main3 .main4{
+    max-width: 540px;
+    
+}
 
 
 @media (max-width: 400px) {
-    #main .main2 .main3 .main3-1 .main3-2 .main5 {
+    #main  .main3 .main3-1 .main3-2 .main5 {
         flex-direction: column;
     }
 
-    #main .main2 .main3 .main3-1 .main3-2 .main5 .main7 {
+    #main  .main3 .main3-1 .main3-2 .main5 .main7 {
         padding-top: 2rem;
+    }
+    .a-top{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
 }
 
-#main .main2 .main3 .main3-4 .main3-5 .main3-6 a .img1 {
+#main  .main3 .main3-4 .main3-5 .main3-6 a .img1 {
     max-width: 540px;
     max-height: 320px;
 }
