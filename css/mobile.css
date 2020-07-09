@@ -1,9 +1,8 @@
 .nav .nav1 {
     width: 100%;
-    height: 0;
+    height: 100%;
     display: flex;
     position: relative;
-    justify-content: space-between;
 }
 
 .nav .nav1 ul {
@@ -11,25 +10,30 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top: 55px;
+    top: 95px;
     z-index: 10000;
     background-color: #fff;
+    transition: all .5s ease-in-out;
 }
 
 .nav .nav1 ul li {
     float: none;
-    margin-left:2rem;;
+    margin-left: 2rem;
     line-height: 40px;
-    
 }
+.nav .nav1 ul li a{
+    color: #0078ff;
+}
+
 .nav .nav1 ul li a::before {
     bottom: 5px;
+    background-color: #0078ff;
 }
 
 #toggle {
     position: absolute;
     right: 2rem;
-    top: 1rem;
+    line-height: 95px;
     display: block;
     cursor: pointer;
 }
@@ -59,10 +63,12 @@
 @media (min-width: 576px) {
     .nav .nav1 {
         max-width: 540px;
+        height: 100%;
     }
 }
+
 @media (max-width: 526px) {
-    #main .main3 .main4 .main4-1 .main4-2 .main4-3{
+    #main .main3 .main4 .main4-1 .main4-2 .main4-3 {
         display: flex;
         flex-direction: column;
     }
@@ -75,45 +81,48 @@
 }
 
 
-#main  .main3 .main3-1 {
+#main .main3 .main3-1 {
     max-width: 540px;
     display: flex;
     flex-direction: column;
 }
-#main  .main3 .main3-1 .box{
+
+#main .main3 .main3-1 .box {
     display: flex;
     flex-direction: column;
     padding: 0;
 }
 
-#main  .main3 .main3-1 .main5 {
+#main .main3 .main3-1 .main5 {
     width: 100%;
 }
-#main .main3 .main3-1 .main3-2{
+
+#main .main3 .main3-1 .main3-2 {
     padding: 4rem 3rem 0 3rem;
 }
+
 #main .main3 .main3-1 ul {
     padding: 0 3rem 4rem 3rem;
 }
 
 
-#main .main3  .main3-3 {
+#main .main3 .main3-3 {
     margin-top: 0;
     border: none;
     height: 280px;
 }
 
-#main .main3  .main3-3 p {
+#main .main3 .main3-3 p {
     text-align: left;
 }
 
-#main .main3  .main3-4 {
+#main .main3 .main3-4 {
     max-width: 540px;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-#main .main3  .main3-4 h4 {
+#main .main3 .main3-4 h4 {
     border: none;
 }
 
@@ -121,28 +130,30 @@
 
     justify-content: space-evenly;
 }
-#main .main3 .main4{
+
+#main .main3 .main4 {
     max-width: 540px;
-    
+
 }
 
 
 @media (max-width: 400px) {
-    #main  .main3 .main3-1 .main3-2 .main5 {
+    #main .main3 .main3-1 .main3-2 .main5 {
         flex-direction: column;
     }
 
-    #main  .main3 .main3-1 .main3-2 .main5 .main7 {
+    #main .main3 .main3-1 .main3-2 .main5 .main7 {
         padding-top: 2rem;
     }
-    .a-top{
+
+    .a-top {
         width: 40px;
         height: 40px;
         line-height: 40px;
     }
 }
 
-#main  .main3 .main3-4 .main3-5 .main3-6 a .img1 {
+#main .main3 .main3-4 .main3-5 .main3-6 a .img1 {
     max-width: 540px;
     max-height: 320px;
 }
