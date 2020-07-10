@@ -3,19 +3,31 @@ $(function () {
     //导航效果
     $(window).scroll(function () {
         if ($(document).scrollTop() >= 50) {
-            $(".nav").addClass("active")
-            $(".icon").css("color","#0078ff")
+            $(".nav").addClass("active");
+            $(".icon").css("color", "#0078ff");
 
         } else {
-            $(".nav").removeClass("active")
-            $(".icon").css("color","#fff")
+            $(".nav").removeClass("active");
+            $(".icon").css("color", "#fff");
         };
     });
+
     //响应式导航效果未完善
-    $("#toggle").click(function(){
-        $(this).parents(".nav").addClass("active")
-        $(this).siblings(".ul1").css("top","75px")
-        $(this).children().css("color","#0078ff")  
+    $("#toggle").click(function () {
+        $(this).parents(".nav").addClass("active");
+        $(this).siblings(".ul1").css("top", "75px");
+        $(this).children().css("color", "#0078ff");
+    });
+    
+    //打字效果
+    var text_typed = $(".text").text();
+    console.log($(".text").text());
+    $(".text1").typed({
+        strings: text_typed.split(","),
+        typeSpeed: 120,
+        loop: true,
+        backDelay: 1100,
+        backSpeed: 50
     })
 
     //li索引到指定div
@@ -50,7 +62,7 @@ $(function () {
         };
     };
     //返回顶部
-    $(".a-top").click(function () {
+    $(".a-top,.aa").click(function () {
         $("html,body").stop().animate({
             scrollTop: 0
         }, 500);

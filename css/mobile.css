@@ -135,7 +135,18 @@
     max-width: 540px;
 
 }
-
+#main .main3 .banner .content{
+    top: 38%;
+}
+#main .main3 .banner .content h1{
+    font-size: 2.5rem;
+}
+#main .main3 .banner .content strong,
+#main .main3 .banner .content span{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
 
 @media (max-width: 400px) {
     #main .main3 .main3-1 .main3-2 .main5 {

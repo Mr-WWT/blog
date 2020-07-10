@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     font-size: 1rem;
@@ -10,8 +15,14 @@ li {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #f5f5f5;
     font-size: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    backface-visibility: hidden;
+
 }
 
 button {
@@ -52,7 +63,7 @@ button {
 
 }
 
-.nav .nav1 .aa{
+.nav .nav1 .aa {
     font-size: 1.2rem;
     padding-left: 2rem;
     font-weight: 800;
@@ -77,7 +88,7 @@ button {
 }
 
 .nav.active .nav1 .aa,
-.nav.active .nav1 ul li a{
+.nav.active .nav1 ul li a {
     color: #0078ff;
 }
 
@@ -159,8 +170,52 @@ button {
     flex: 2;
     flex-direction: column;
     justify-content: space-between;
-
 }
+
+#main .main3 .banner {
+    position: relative;
+    background: url(../img/beijing.jpg) center;
+    height: 100vh;
+    background-size: cover;
+}
+
+#main .main3 .banner::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.7;
+}
+
+#main .main3 .banner .content {
+    position: relative;
+    top: 30%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#main .main3 .banner .content h1 {
+    color: #fff;
+    text-align: center;
+    padding: 0 4rem 1.5rem;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#main .main3 .banner .content p {
+    display: none;
+}
+#main .main3 .banner .content strong,
+#main .main3 .banner .content span{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
 
 #main .main3 .main3-1 .main3-3 {
     max-width: 100%;
@@ -278,7 +333,7 @@ button {
 
 #main .main3 .main3-4 h4 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
@@ -352,6 +407,7 @@ button {
 
 #main .main3 .main3-4 .main3-5 .main3-6 .tilte h2 {
     font-size: 1.2rem;
+    font-weight: normal;
     max-width: 210px;
     margin: 0 auto;
     line-height: 1.2;
