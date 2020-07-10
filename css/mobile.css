@@ -21,7 +21,8 @@
     margin-left: 2rem;
     line-height: 40px;
 }
-.nav .nav1 ul li a{
+
+.nav .nav1 ul li a {
     color: #0078ff;
 }
 
@@ -56,7 +57,7 @@
     float: right;
 }
 
-.nav .nav1 input:checked~ul{
+.nav .nav1 input:checked~ul {
     display: block;
 }
 
@@ -135,14 +136,17 @@
     max-width: 540px;
 
 }
-#main .main3 .banner .content{
+
+#main .main3 .banner .content {
     top: 38%;
 }
-#main .main3 .banner .content h1{
+
+#main .main3 .banner .content h1 {
     font-size: 2.5rem;
 }
+
 #main .main3 .banner .content strong,
-#main .main3 .banner .content span{
+#main .main3 .banner .content span {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 200;
