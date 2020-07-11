@@ -5,7 +5,6 @@ $(function () {
         if ($(document).scrollTop() >= 50) {
             $(".nav").addClass("active");
             $(".icon").css("color", "#0078ff");
-
         } else {
             $(".nav").removeClass("active");
             $(".icon").css("color", "#fff");
@@ -18,17 +17,16 @@ $(function () {
         $(this).siblings(".ul1").css("top", "75px");
         $(this).children().css("color", "#0078ff");
     });
-    
+
     //打字效果
     var text_typed = $(".text").text();
-    console.log($(".text").text());
     $(".text1").typed({
         strings: text_typed.split(","),
         typeSpeed: 120,
         loop: true,
         backDelay: 1100,
         backSpeed: 50
-    })
+    });
 
     //li索引到指定div
     $(".ul1 li").click(function () {
