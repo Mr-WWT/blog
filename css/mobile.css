@@ -1,32 +1,44 @@
-.nav .nav1 {
+.nav .nav-menu {
     width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-}
-
-.nav .nav1 ul {
-    display: none;
     position: absolute;
-    width: 100%;
     left: 0;
-    top: 95px;
-    z-index: 10000;
+    top: 100%;
+    padding: 0;
     background-color: #fff;
+    transform: rotateX(90deg);
     transition: all .5s ease-in-out;
+    box-shadow: 0 9px 11px rgba(206, 206, 206, .3);
+    opacity: 0;
+    transform-origin: top center;
+}
+.nav .nav-menu li{
+    padding: 0;
 }
 
-.nav .nav1 ul li {
+.nav .nav-menu.active {
+    opacity: 1;
+    transform: rotatex(0deg);
+}
+
+.nav .logo {
+    padding: 0;
+}
+
+.nav .nav-toggle {
+    display: block;
+}
+
+.nav ul li {
     float: none;
-    margin-left: 2rem;
+    margin-left: 1.2rem;
     line-height: 40px;
 }
 
-.nav .nav1 ul li a {
+.nav ul li a {
     color: #0078ff;
 }
 
-.nav .nav1 ul li a::before {
+.nav ul li a::before {
     bottom: 5px;
     background-color: #0078ff;
 }

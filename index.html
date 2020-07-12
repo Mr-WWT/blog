@@ -4,34 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WangWenTao</title>
+    <title>王文涛个人博客</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" media="(max-width:768px)" href="css/mobile.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
+    <!-- 主体js文件 -->
     <script src="js/index.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/icon.js"></script>
-
+    <script>
+        $(function () {
+            
+        })
+    </script>
 </head>
 
 <body>
-    <!--排版临摹三年级的，动态效果都是自己打的 有响应式 -->
+    <!--排版临摹三年级的，动态效果都是自己打的 响应式也有 -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
     <div id="fixed" class="nav">
-        <div class="nav1">
-            <a href="#" class="aa">王文涛个人网页</a>
-            <label id="toggle" for="ckeckbox2">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#gengduo"></use>
-                </svg>
-            </label>
-            <input id="ckeckbox2" type="checkbox">
-
-            <ul class="ul1">
-                <li class="li1 active"><a href="#">首页</a></li>
-                <li class="li1"><a href="#">关于</a></li>
-                <li class="li1"><a href="#">作品</a></li>
-                <li class="li1"><a href="#">联系</a></li>
-            </ul>
+        <div class="row">
+            <div class="container">
+                <a href="#" class="logo">王文涛博客</a>
+                <div class="nav-toggle">
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="li1 active"><a href="#">首页</a></li>
+                    <li class="li1"><a href="#">关于</a></li>
+                    <li class="li1"><a href="#">作品</a></li>
+                    <li class="li1"><a href="#">联系</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="main">
@@ -40,11 +52,17 @@
                 <div class="content">
                     <h1>I' M</h1>
                     <div class="content1">
-                        <p class="text">王文涛,web 开发人员,网页设计者</p>
+                        <p class="text">王文涛,网页设计者</p>
                         <strong class="text1">|</strong>
                     </div>
-
                 </div>
+                <a href="#" class="down">
+                    <i>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#xia"></use>
+                        </svg>
+                    </i>
+                </a>
             </div>
             <div class="main3-1 w">
                 <div class="box">

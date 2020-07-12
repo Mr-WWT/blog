@@ -3,25 +3,21 @@
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    font-size: 1rem;
+a,
+ul {
+    text-decoration: none !important;
 }
 
-ul,
-li {
+ul {
     list-style: none;
     color: #6f6f6f;
+    margin: 0 !important;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+body,
+html {
     background-color: #f5f5f5;
-    font-size: 1rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    backface-visibility: hidden;
+    font-size: 16px !important;
 
 }
 
@@ -39,85 +35,180 @@ button {
     color: #fff;
 }
 
-
-.nav {
-    height: 95px;
-    width: 100%;
-    margin: 0;
+#preloader {
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
-    position: fixed;
-    top: 0px;
-    z-index: 10001;
-    transition: all .5s ease-in-out;
+    bottom: 0;
+    background-color: #f5f5f5;
+    z-index: 1000;
 }
 
+.pre-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
 
-.nav .nav1 {
-    max-width: 1100px;
-    margin: 0 auto;
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    border-radius: 50%;
+    background-color: #333;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2s infinite ease-in-out;
 }
 
-.nav .nav1 .aa {
+.double-bounce2 {
+    animation-delay: -1s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.nav {
+    padding-left: 20px !important;
+    padding: 25px 20px;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    box-shadow: 0 9px 11px rgba(206, 206, 206, .3);
+}
+
+.container {
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav .logo {
     font-size: 1.2rem;
-    padding-left: 2rem;
     font-weight: 800;
-    color: #fff;
+    color: #0078ff;
+    padding-left: 4rem;
+}
+
+.nav .nav-toggle {
+    position: absolute;
+    right: 20px;
+    top: 27px;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-toggle span:before,
+.nav-toggle span:after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #000;
+    transform: rotate(0deg);
+    transition: all .4s;
+    right: 0;
+}
+
+.nav-toggle span:after {
+    top: 7px;
+}
+
+.nav-toggle span:before {
+    top: -7px;
+}
+
+.nav .nav-toggle span {
+    height: 3px;
+    width: 30px;
+    display: block;
+    background: #000;
+    position: absolute;
+    top: 10px;
+    transition: all .2s;
+}
+
+.nav .nav-toggle.active span {
+    background: transparent;
+
+}
+
+.nav-toggle.active span:after {
+    top: 0px;
+    transform: rotate(40deg)
 }
 
 
-.nav .nav1 ul li {
+.nav-toggle.active span:before {
+    top: 0px;
+    transform: rotate(-40deg)
+}
+
+.nav ul {
+    float: right;
+    padding-right: 2rem;
+}
+
+.nav ul li {
     float: left;
     font-weight: bold;
-    margin-right: 2rem;
-    padding: 0.5rem 0;
     letter-spacing: 3px;
+    padding: 5px 30px 5px 0;
     position: relative;
     overflow: hidden;
 }
 
-.nav.active {
-    background-color: #fff;
-    height: 75px;
-    transition: all .5s ease-in-out;
-}
 
-.nav.active .nav1 .aa,
-.nav.active .nav1 ul li a {
+.nav ul li a {
     color: #0078ff;
 }
 
-.nav.active .nav1 ul li a::before {
-    background-color: #0078ff;
-
-}
-
-.nav .nav1 ul li a {
-    color: #fff;
-}
-
-.nav .nav1 ul li a::before {
+.nav ul li a::before {
     content: "";
-    width: 34px;
+    width: 35px;
     height: 3px;
-    background-color: #fff;
+    background-color: #0078ff;
     position: absolute;
     bottom: 0px;
     transition: all .4s;
     transform: translateX(-45px);
 }
 
-.nav .nav1 ul li a:hover::before {
+.nav ul li a:hover::before {
     transform: translateX(0px);
 }
 
 
-.nav .nav1 ul .li1.active a::before {
+.nav ul .li1.active a::before {
     transform: translateX(0px);
 }
 
@@ -176,7 +267,59 @@ button {
     position: relative;
     background: url(../img/beijing.jpg) center;
     height: 100vh;
+    z-index: 10;
     background-size: cover;
+}
+
+#main .main3 .banner .down {
+    position: absolute;
+    display: table;
+    width: 100px;
+    height: 50px;
+    background: rgba(150, 150, 150, 0.2);
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px;
+    border-radius: 50px 50px 0 0;
+    z-index: 3;
+    overflow: hidden;
+}
+
+#main .main3 .banner .down i {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0, 0, 0, .4);
+    animation: down 1.8s infinite;
+    text-align: center;
+}
+
+#main .main3 .banner .down i .icon {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes down {
+    0% {
+        top: 0;
+        opacity: .5
+    }
+
+    25% {
+        top: 10px;
+        opacity: 1
+    }
+
+    50% {
+        top: 5px;
+        opacity: 1
+    }
+
+    100% {
+        top: 15px;
+        opacity: 0
+    }
 }
 
 #main .main3 .banner::before {
@@ -209,8 +352,9 @@ button {
 #main .main3 .banner .content p {
     display: none;
 }
+
 #main .main3 .banner .content strong,
-#main .main3 .banner .content span{
+#main .main3 .banner .content span {
     color: #fff;
     font-size: 2rem;
     font-weight: 200;

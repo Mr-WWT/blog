@@ -1,40 +1,44 @@
 $(function () {
     //纯手打
+    //进入缓冲
+    $('#preloader').delay(550).fadeOut('slow');
+
     //导航效果
     $(window).scroll(function () {
-        if ($(document).scrollTop() >= 50) {
-            $(".nav").addClass("active");
-            $(".icon").css("color", "#0078ff");
+        if ($(document).scrollTop() >= 550) {
+            $(".nav").stop().fadeIn(100)
+
         } else {
-            $(".nav").removeClass("active");
-            $(".icon").css("color", "#fff");
+            $(".nav").stop().fadeOut(100)
+            $(".nav-toggle").removeClass("active")
+            $(".nav-menu").removeClass("active")
         };
+        console.log($(document).scrollTop());
     });
 
     //响应式导航效果未完善
-    $("#toggle").click(function () {
-        $(this).parents(".nav").addClass("active");
-        $(this).siblings(".ul1").css("top", "75px");
-        $(this).children().css("color", "#0078ff");
+    $(".nav-toggle").click(function () {
+        $(this).toggleClass("active");
+        $(this).siblings(".nav-menu").toggleClass("active")
     });
 
     //打字效果
     var text_typed = $(".text").text();
     $(".text1").typed({
         strings: text_typed.split(","),
-        typeSpeed: 120,
+        typeSpeed: 130,
         loop: true,
         backDelay: 1100,
         backSpeed: 50
     });
 
     //li索引到指定div
-    $(".ul1 li").click(function () {
+    $(".nav-menu li,.down").click(function () {
         var index = $(this).index();
         var top = $(".main3 .w").eq($(this).index()).offset().top;
         $("html,body").stop().animate({
             scrollTop: top
-        }, 500);
+        }, 700);
 
     });
 
@@ -43,7 +47,7 @@ $(function () {
         toggleTool();
         $(".main3 .w").each(function (i, ele) {
             if ($(document).scrollTop() >= $(ele).offset().top - 1) {
-                $(".ul1 li").eq(i).addClass("active").siblings().removeClass("active");
+                $(".nav-menu li").eq(i).addClass("active").siblings().removeClass("active");
             };
 
         });
@@ -60,7 +64,7 @@ $(function () {
         };
     };
     //返回顶部
-    $(".a-top,.aa").click(function () {
+    $(".a-top,.logo").click(function () {
         $("html,body").stop().animate({
             scrollTop: 0
         }, 500);
