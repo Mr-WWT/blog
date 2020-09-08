@@ -341,9 +341,8 @@ button {
     color: #fff;
     text-align: center;
     font-weight: normal;
-    font-size:72px ;
+    font-size: 60px;
 }
-
 
 
 #main .main3 .banner .content p {
@@ -438,7 +437,7 @@ button {
 }
 
 #main .main3 .main3-1 ul h2 {
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 5px;
     margin-bottom: 1.5rem;
     color: #333;
@@ -447,7 +446,7 @@ button {
 }
 
 #main .main3 .main3-1 ul li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     color: #4e4e4e;
 }
@@ -620,7 +619,7 @@ button {
 }
 
 #main .main3 .main4 .main4-1 .main4-3 ul li p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 33px;
     color: #888;
 }

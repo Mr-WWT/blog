@@ -4,7 +4,7 @@
 }
 
 .container {
-    padding: 0 40px;
+    padding: 0 33px;
     box-sizing: border-box;
 }
 
@@ -38,7 +38,7 @@
 .nav .nav-toggle {
     display: block;
     position: absolute;
-    right: 40px;
+    right: 33px;
     top: 0;
 }
 
